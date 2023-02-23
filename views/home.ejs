@@ -8,6 +8,7 @@
     </head>
     <body>
         <div id="app">
+            <!-- task input format -->
             <div id="inpform">
                 <h1>TODO App</h1>
                 <form action="/createtsk" method="POST">
@@ -36,6 +37,7 @@
                     </div>
                 </form>
             </div>
+            <!-- tasks displayed here -->
             <form id="tasks" action="/deletetsk" method="POST">
                 <% for(let i of tasks) { %>
                     <div id="tsk">
@@ -49,11 +51,10 @@
                         </div>
                     </div>
                 <% } %>
-                <!-- <button type="submit">sdfs</button> -->
             </form>
         </div>
         
-        <!-- External button-->
+
         <script src="https://kit.fontawesome.com/418a283835.js" crossorigin="anonymous"></script>
         <script src="/home.js"></script>
     </body>
